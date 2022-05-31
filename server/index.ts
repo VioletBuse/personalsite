@@ -12,7 +12,6 @@ addEventListener("fetch", (event: FetchEvent) => {
 
 async function handleEvent(event: FetchEvent) {
 	try {
-		// Add logic to decide whether to serve an asset or run your original Worker code
 		return await getAssetFromKV(event);
 	} catch (e) {
 		const url = new URL(event.request.url);
