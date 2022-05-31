@@ -1,0 +1,9 @@
+name = "personalsite"
+main = "server/index.ts"
+compatibility_date = "2022-05-31"
+
+[build]
+command = "npm install && npm run build && npm run export"
+
+[site]
+bucket = "./out"
